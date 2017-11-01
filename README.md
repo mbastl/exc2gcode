@@ -47,10 +47,10 @@ Multiline commands are supported. Vertical bar (|) can be used as command separa
 
 Predefined valuse can be stored in configuration files:
 * file named `exc2gcode` in current directory
-* file named `.exc2gcode` in user's home directory (`~/.exc2gcode` or `%USERPROFILE%\.exc2gcode`, depends on operating systems)
+* file named `.exc2gcode` in user's home directory (`~/.exc2gcode` or `%USERPROFILE%\.exc2gcode`, depends on operating system)
 
 First the file in user's home directory is processed, then file in current directory is processed and finally command line arguments are applied. Configuration file
-format is straightforward - name of long command line options separated from value by colon:
+format is straightforward - name of long command line option separated from value by colon, one option per line:
 
 	header:G92 X0 Y0 Z0|G90
 	tool-change-height:40
