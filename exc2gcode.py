@@ -212,6 +212,7 @@ with open(filenames[0]) as f:
 	    if m != None:
 	      sy = m.group(1)
 	# Write set of drill commands 
+        of.write("G04 P0\n")
         of.write("G00 X%.3f Y%.3f F%d\n" % (getval(sx), getval(sy), options.move_speed))
         of.write("G01 Z%.3f F%d\n" % (options.drill_height, options.drill_speed))
         of.write("G01 Z%.3f F%d\n" % (options.safe_height, options.retract_speed))
