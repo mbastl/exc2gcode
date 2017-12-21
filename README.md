@@ -16,7 +16,7 @@ Features:
         -f OUTPUT_FILE, --file=OUTPUT_FILE
         			Name of output file; if not specified stdout is used
         -u UNIT, --unit=UNIT  Output unit (mm or in); if not specified the unit used
-        			in imput file is preserved
+        			in input file is preserved
         -x MAXSIZE, --maxsize=MAXSIZE
         			Maximum drill diameter (mm or in)
         --header=GHEADER      Program header

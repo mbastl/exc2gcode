@@ -88,7 +88,7 @@ usage = "Usage: %prog [options] <filename>"
 cmdline = OptionParser(usage=usage)
 
 cmdline.add_option("-f", "--file",   action="store", type="string", dest="output_file",   default="",   help="Name of output file; if not specified stdout is used")
-cmdline.add_option("-u", "--unit",   action="store", type="string", dest="unit",   default=defaults['unit'],   help="Output unit (mm or in); if not specified the unit used in imput file is preserved")
+cmdline.add_option("-u", "--unit",   action="store", type="string", dest="unit",   default=defaults['unit'],   help="Output unit (mm or in); if not specified the unit used in input file is preserved")
 cmdline.add_option("-x", "--maxsize",   action="store", type="float", dest="maxsize",   default=float(defaults['maxsize']),   help="Maximum drill diameter (mm or in)")
 cmdline.add_option("", "--header",   action="store", type="string", dest="gheader",   default=defaults['header'],   help="Program header")
 cmdline.add_option("", "--footer",   action="store", type="string", dest="gfooter",   default=defaults['footer'],   help="Program footer")
